@@ -1,8 +1,6 @@
 html, body {
   margin: 0;
   padding: 0;
-
-  overflow: hidden;
 }
 canvas {
   display: block;
@@ -10,17 +8,24 @@ canvas {
 
 .sketchContainer{
   position: relative;
-  width: 100vw;
-  height:100vh;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
+
+  /* place it center of html */
+  left: 50%;
+  transform: translate(-50%);
 
   top: -64px;
 }
 
-.sketchIframe{
+.sketchContainer > iframe{
   position: absolute;
-  width: 100%;
-  height:100%;
+  border: none;
+  z-index: -1;
 
-  overflow: hidden;
+  /* shift to hide p5 bar */
+  width: 400px;
+  height: 442px;
+  top: -42px;
 }
