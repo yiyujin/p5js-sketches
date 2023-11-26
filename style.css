@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.sketchContainer{
+  position: relative;
+  width: 100vw;
+  height:100vh;
+
+  top: -64px;
+}
+
+.sketchIframe{
+  position: absolute;
+  width: 100%;
+  height:100%;
+}
