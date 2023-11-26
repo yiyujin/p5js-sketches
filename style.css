@@ -6,20 +6,25 @@ canvas {
   display: block;
 }
 
-.sketchContainer{
+.iframeComponent{
+  position: relative;
+
+  margin-bottom: 40px;
+}
+
+.iframeContainer{
   position: relative;
   width: 400px;
   height: 400px;
   overflow: hidden;
+  background-color: black;
 
   /* place it center of html */
   left: 50%;
   transform: translate(-50%);
-
-  top: -64px;
 }
-
-.sketchContainer > iframe{
+  
+.iframeContainer > iframe{
   position: absolute;
   border: none;
   z-index: -1;
