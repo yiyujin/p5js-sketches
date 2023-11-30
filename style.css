@@ -36,3 +36,27 @@ html, body {
   height: 442px;
   top: -42px;
 }
+
+/* 595 x 842 Motion Posters */
+.iframeContainerMotionPoster{
+  position: relative;
+  width: 595px;
+  height: 842px;
+  overflow: hidden;
+  background-color: black;
+
+  /* place it center of html */
+  left: 50%;
+  transform: translate(-50%);
+}
+  
+.iframeContainerMotionPoster > iframe{
+  position: absolute;
+  border: none;
+  z-index: -1;
+
+  /* shift to hide p5 bar */
+  width: 595px;
+  height: 884px;
+  top: -42px;
+}
