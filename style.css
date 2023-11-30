@@ -38,10 +38,16 @@ html, body {
 }
 
 /* 595 x 842 Motion Posters */
+/* ratio = 0.5 */
+
+:root{
+  --ratio : 0.5;
+}
+
 .iframeContainerMotionPoster{
   position: relative;
-  width: 595px;
-  height: 842px;
+  width: 297.5px;
+  height: 421px;
   overflow: hidden;
   background-color: black;
 
@@ -56,7 +62,7 @@ html, body {
   z-index: -1;
 
   /* shift to hide p5 bar */
-  width: 595px;
-  height: 884px;
+  width: 297.5px;
+  height: 463px;
   top: -42px;
 }
